@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <script src="main.js" defer></script>
+
+</head>
+<body>
+  <header>
+    <img src="./images/logo.svg" alt="" class="logo">
+    <nav>
+      <ul>
+        <li data-dropdown>
+          <div class="dropdown">
+            <button class="menu-btn dropdown-btn" data-pressed="false">Features</button>
+            <div class="dropdown-menu">
+              <ul>
+                <li class="with-icon" data-todo>Todo List</li>
+                <li class="with-icon" data-calendar>Calendar</li>
+                <li class="with-icon" data-reminders>Reminders</li>
+                <li class="with-icon" data-planning>Planning</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li data-dropdown>
+          <div class="dropdown">
+            <button class="menu-btn dropdown-btn" data-pressed="false">Company</button>
+            <div class="dropdown-menu" data-menu-item="Company">
+              <ul>
+                <li>History</li>
+                <li>Our Team</li>
+                <li>Blog</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li><button class="menu-btn">Careers</button></li>
+        <li><button class="menu-btn">About</button></li>
+        <li><button class="menu-btn">Login</button></li>
+        <li><button class="menu-btn register-btn">Register</button></li>
+      </ul>
+    </nav>
+    <div class="mobile-menu-toggler" data-menu-opened="false"></div>
+  </header>
+  <main>
+    <div class="remote">
+      <h1>Make<div> remote work</div></h1>
+      <p>
+        Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.
+      </p>
+      <button class="learn-btn">Learn more</button>
+      <div class="clients">
+        <img src="./images/client-databiz.svg" alt="">
+        <img src="./images/client-audiophile.svg" alt="">
+        <img src="./images/client-meet.svg" alt="">
+        <img src="./images/client-maker.svg" alt="">
+      </div>
+    </div>
+    <div class="hero-image">
+      <picture>
+        <source srcset="./images/image-hero-desktop.png" media="(min-width: 768px)">
+        <source srcset="./images/image-hero-mobile.png">
+        <img src="./images/image-hero-mobile.png" alt="">
+      </picture>
+    </div>
+  </main>
+</body>
+</html>
